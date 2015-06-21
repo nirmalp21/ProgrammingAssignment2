@@ -23,7 +23,7 @@ cacheSolve <- function(x, ...) { ## Return a matrix that is the inverse of 'x'
        return(i)
      }
      matrix <- x$getm()  ##fetches the value of x into the 'matrix' variable.
-     i <- solve(matrix, ...) ##calulates the value of inverse.
-     x$setinv(i)
+     i <- solve(matrix, ...) ## calulates the value of inverse.
+     x$setinv(i)             ## sets new values of inverse matrix and stores it.
      i                      ## prints the value of inverse matrix.
 }
